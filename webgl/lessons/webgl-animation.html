@@ -115,7 +115,7 @@ but since the browser returns time in milliseconds (1000s of a second) we need
 to multiply by 0.001 to get seconds.</p>
 <pre class="prettyprint showlinemods">
 *function getTimeInSeconds() {
-*  return Date.now() * 0.001;
+*  return performance.now() * 0.001;
 *}
 </pre>
 
